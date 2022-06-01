@@ -23,7 +23,7 @@ function Navbar() {
             <Link to="/"> Home </Link>
             <Link to="/menu"> Menu </Link>
             <Link to="/about"> About </Link>
-            <Link to="/contact"> Contact </Link>
+            <Link to="/customerService"> Customer Service </Link>
             </div>
         </div>
         {/* Link Button */}
@@ -31,7 +31,7 @@ function Navbar() {
             <Link to="/"> Home </Link>
             <Link to="/menu"> Menu </Link>
             <Link to="/about"> About </Link>
-            <Link to="/contact"> Contact </Link>
+            <Link to="/customerService"> Customer Service </Link>
         <button onClick={toggleNavbar}>
             <ReorderIcon/>
         </button>
