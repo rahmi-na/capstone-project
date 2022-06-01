@@ -5,12 +5,17 @@ import '../style/Navbar.css';
 import ReorderIcon from '@mui/icons-material/Reorder';
 
 function Navbar() {
-    // Variabel dimana akan berubah untuk re-render website dan akan menampilkan perubahan yang dibuat
+    // Variabel dimana akan berubah untuk re-render website dan akan menampilkan perubahan yang dibuat, seperti 'if'
     const [openLinks, setOpenLinks] = useState(false)
+
+    const toggleNavbar = () => {
+        // Membuat fungsi dimana akan mengubah id value menjadi sebaliknya
+        setOpenLinks(!openLinks);
+    }
 
   return (
     <div className='navbar'>
-        <div className='leftSide'>
+        <div className='leftSide' id={openLinks ? "open" : "close"}>
             {/* Logo Di Sebelah Kiri Atas */}
             <img src={Logo} />
             {/* Link Responsive Ketika Website Seukuran Handphone */}
@@ -27,7 +32,7 @@ function Navbar() {
             <Link to="/menu"> Menu </Link>
             <Link to="/about"> About </Link>
             <Link to="/contact"> Contact </Link>
-        <button>
+        <button onClick={toggleNavbar}>
             <ReorderIcon/>
         </button>
         </div>
