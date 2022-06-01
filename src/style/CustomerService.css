@@ -16,5 +16,9 @@
     .customerService {
       justify-content: center;
       align-items: center;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-color: #00a884;
     }
   }
