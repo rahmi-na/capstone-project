@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import '../style/Home.css';
-import Dashboard from '../assets/dashboard.jpg';
+import Dashboard from '../assets/Dashboard.jpg';
 import { Link } from "react-router-dom";
 function Home() {
   return (
