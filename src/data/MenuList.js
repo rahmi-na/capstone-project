@@ -12,7 +12,7 @@ export const MenuList = [
         image: Asuransi,
     },
     {
-        name: "Lain-Lain",
+        name: "Legal Dokumen",
         image: Lain,
     }
 ]

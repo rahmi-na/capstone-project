@@ -20,18 +20,20 @@ function Navbar() {
             <img src={Logo} />
             {/* Link Responsive Ketika Website Seukuran Handphone */}
             <div className='hiddenLinks'>
-            <Link to="/"> Home </Link>
+            <Link to="/"> Beranda </Link>
             <Link to="/menu"> Menu </Link>
-            <Link to="/about"> About </Link>
+            <Link to="/about"> Tentang Kami </Link>
             <Link to="/customerService"> Customer Service </Link>
+            <Link to="/kalkulatorPajak"> kalkulator Pajak </Link>
             </div>
         </div>
         {/* Link Button */}
         <div className='rightSide'>
-            <Link to="/"> Home </Link>
+            <Link to="/"> Beranda </Link>
             <Link to="/menu"> Menu </Link>
-            <Link to="/about"> About </Link>
+            <Link to="/about"> Tentang Kami </Link>
             <Link to="/customerService"> Customer Service </Link>
+            <Link to="/kalkulatorPajak" className='NavbarButton'> Kalkulator Pajak </Link>
         <button onClick={toggleNavbar}>
             <ReorderIcon/>
         </button>

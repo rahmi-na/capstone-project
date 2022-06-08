@@ -1,33 +1,55 @@
 .home {
     width: 100%;
     height: 90vh;
+    background-color: white;
+  }
+  .home img {
+    width: 50%;
+    height: auto;
+    display: flex;
+    float: right;
+    justify-content: center;
+    flex-direction: row;
+    align-items: right;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .headerContainer {
+    width: auto;
+    margin-left: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: right;
     flex-direction: column;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   }
   
-  .headerContainer {
-    width: auto;
-    margin-left: 50px;
-  }
-  
   .headerContainer h1 {
     justify-content: center;
     align-items: center;
-    font-size: 90px;
-    height: 60px;
-    font-weight: 50;
+    font-size: 50px;
+    height: 0px;
+    font-weight: 0px;
     color: black;
   }
-  
+  .headerContainer h2 {
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 0px;
+    font-weight: 10px;
+    color: black;
+  }
   .headerContainer p {
     padding: 0;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: lighter;
     color: black;
   }
@@ -35,19 +57,19 @@
   .headerContainer button {
     color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     justify-content: center;
-    background-color: #121619;
-    height: 50px;
-    width: 180px;
+    background-color: #CC2424;
+    height: 45px;
+    width: auto;
     color: white;
     text-decoration: none;
     font-size: 20px;
   }
   
   .headerContainer button:hover {
-    background-color: #07090a;
+    background-color: #CC2424;
     cursor: pointer;
     transition: 0.3s ease-in;
   }
@@ -65,7 +87,7 @@
       width: 80%;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: left;
       flex-direction: column;
       background-color: #121619;
       color: white;
@@ -76,6 +98,11 @@
       height: 30px;
       color: white;
     }
+    .headerContainer h2 {
+      font-size: 20px ;
+      height: 30px;
+      color: white;
+    }
   
     .headerContainer p {
       font-size: 30px;
@@ -83,9 +110,9 @@
     }
   
     .headerContainer button {
-      background-color: white;
-      color: #121619;
-      margin-bottom: 30px;
+      background-color: #CC2424;
+      color: white;
+      margin-bottom: 30px;  
     }
   
     .headerContainer button:hover {
