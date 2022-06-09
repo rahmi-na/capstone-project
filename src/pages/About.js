@@ -1,26 +1,61 @@
-import React from 'react';
+import React from 'react'
+import '../style/About.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Law from '../assets/Law.jpg';
-import '../style/About.css';
+import Photo from '../assets/Photo.jpg';
+import AboutUs from '../assets/AboutUs.jpg';
+import Avatar from '@mui/material/Avatar';
 
 function About() {
   return (
     <div>
-        <Navbar/>
-        <div className='about'>
-            <div className='aboutTop' style={{ backgroundImage: `url(${Law})`}}></div>
-            <div className='aboutBottom'>
-                <h1>About Us</h1>
-                <p>Kami memiliki ide berupa laman interaktif yaitu: Maturedi:
-                    Pusat Edukasi Digital Terkait Pengurusan Ragam Legal Dokumen berbasis Website.
-                    Diharapkannya dari terbentuknya laman ini, masyarakat menjadi siap dalam menghadapi 
-                    kewajiban pajak dan mampu mendapatkan informasi terpusat terkait pajak, asuransi,
-                    dan pengurusan dokumen-dokumen penting.
-                </p>
+      <Navbar/>
+      <div className='title'> Tentang Kami </div>
+        <div className='index'>
+
+          <div className='RowTop'>
+            <div className='benner'>
+              <div className='photoProfil'>
+                <Avatar alt="" src={Photo} sx={{ width: 76, height: 76 }}/>
+                <p> Nama : <br/>Social Media : <br/>About Me : </p>
+              </div>
             </div>
+
+              <img className='background' src={AboutUs}/>
+
+            <div className='benner'>
+              <div className='photoProfil'>
+                <Avatar alt="" src={Photo} sx={{ width: 76, height: 76 }}/>
+                <p> Nama : <br/>Social Media : <br/>About Me : </p>
+              </div>
+            </div>
+          </div>
+
+          <div className='RowBottom'>
+            <div className='benner'>
+              <div className='photoProfil'>
+                <Avatar alt="" src={Photo} sx={{ width: 76, height: 76 }}/>
+                <p> Nama : <br/>Social Media : <br/>About Me : </p>
+              </div>
+            </div>
+
+            <div className='benner'>
+              <div className='photoProfil'>
+                <Avatar alt="" src={Photo} sx={{ width: 76, height: 76 }}/>
+                <p> Nama : <br/>Social Media : <br/>About Me : </p>
+              </div>
+            </div>
+
+            <div className='benner'>
+              <div className='photoProfil'>
+                <Avatar alt="" src={Photo} sx={{ width: 76, height: 76 }}/>
+                <p> Nama : <br/>Social Media : <br/>About Me : </p>
+              </div>
+            </div>
+          </div>
+
         </div>
-        <Footer/>
+      <Footer/>
     </div>
   )
 }
