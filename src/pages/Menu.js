@@ -10,9 +10,9 @@ function Menu() {
     <div>
         <Navbar/>
             <div className='menu'>
-                <h1 className='menuTitle'>Materi</h1>
+                <h1 className='menuTitle'>Jelajahi Sekarang!</h1>
                 <div className='menuList'>{MenuList.map((menuItem, key) => {
-                    return <MenuItem image={menuItem.image} name={menuItem.name} key={key}/>
+                    return <MenuItem image={menuItem.image} name={menuItem.name} quote={menuItem.quote} btn={menuItem.btn} key={key}/>
                 })}</div>
             </div>
         <Footer/>

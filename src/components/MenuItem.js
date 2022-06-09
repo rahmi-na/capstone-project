@@ -1,12 +1,15 @@
 import React from 'react'
 
 // Props untuk memanggil setiap item yang berada pada MenuList.js
-function MenuItem({image, name}) {
+function MenuItem({image, name, quote, btn}) {
   return (
     <div className='menuItem'>
         <div style={{ backgroundImage: `url(${image})`}}> </div>
-        <h1> {name} </h1>
-        <p></p>
+        <center>
+          <h1> {name} </h1>
+          <p> {quote} </p>
+          <button> {btn} </button>
+        </center>
     </div>
   )
 }

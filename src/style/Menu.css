@@ -5,10 +5,12 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #EBEBEB;
   }
   .menu .menuTitle {
-    font-family: cursive;
+    /* font-family: cursive; */
     font-size: 60px;
+    text-align: center;
   }
   
   .menuList {
@@ -24,16 +26,37 @@
   .menuItem {
     border-radius: 15px;
     width: 300px;
-    height: 350px;
+    height: 400px;
     margin: 20px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
+  
   .menuItem:hover {
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
     transition: 0.3s ease-in;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
+  .menuItem button {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    background-color: #CC2424;
+    color: white;  
+  }
+
+  .menuItem button:hover {
+    background-color: #C73139;
+    color: white; 
+    transition: 0.3s ease-in;
+  }
+
   .menuItem div {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -47,6 +70,7 @@
   .menuItem h1,
   .menuItem p {
     margin-left: 20px;
+    margin-right: 20px;
   }
   
   @media only screen and (max-width: 1300px) {

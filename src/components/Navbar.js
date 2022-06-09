@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Logo from '../assets/Logo.jpg';
+import Logo from '../assets/Logo.jpeg';
 import { Link } from "react-router-dom";
 import '../style/Navbar.css';
 import ReorderIcon from '@mui/icons-material/Reorder';
@@ -22,9 +22,9 @@ function Navbar() {
             <div className='hiddenLinks'>
             <Link to="/"> Beranda </Link>
             <Link to="/menu"> Menu </Link>
-            <Link to="/about"> Tentang Kami </Link>
-            <Link to="/customerService"> Customer Service </Link>
-            <Link to="/kalkulatorPajak"> kalkulator Pajak </Link>
+            <Link to="/about"> AboutUs </Link>
+            <Link to="/customerService"> CS </Link>
+            <Link to="/kalkulatorPajak" className='NavbarButton'> Kalkulator </Link>
             </div>
         </div>
         {/* Link Button */}
