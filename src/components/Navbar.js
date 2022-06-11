@@ -22,7 +22,7 @@ function Navbar() {
             <div className='hiddenLinks'>
             <Link to="/"> Beranda </Link>
             <Link to="/menu"> Menu </Link>
-            <Link to="/about"> AboutUs </Link>
+            <Link to="/about"> About </Link>
             <Link to="/customerService"> CS </Link>
             <Link to="/kalkulatorPajak" className='NavbarButton'> Kalkulator </Link>
             </div>
