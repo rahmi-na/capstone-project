@@ -4,36 +4,43 @@
     width: 100%;
     height: 120px;
     background-color: #131313;
-    padding-top: 10px;  
+    padding-top: 10px;
   }
   
-  .socialMedia svg {
+  .footer_left {
+    width: 100%;
+  }
+
+  .footer_left p {
     color: white;
-    margin-top: 0;
-    margin-right: 21px;
+    float: right;
+    margin-right: 20px;
+  }
+  
+  .footer_left img {
+    width: 150px;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  .footer_right {
+    width: 100%;
+  }
+
+  .footer_right svg {
+    color: white;
+    margin-top: -10px;
     font-size: 30px;
     cursor: pointer;
-    display: flex;
-    float: right;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .Medsos {
-    color: white;
-    margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: center;
-    
+    float: right;
+    margin-right: 20px;
   }
   
-  .copyright {
+  .footer_right p {
     color: white;
     margin: 20px;
-    display: flex;
-    flex-direction: row;
     justify-content: left;
     align-items: center;
   }
